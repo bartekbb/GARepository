@@ -39,6 +39,7 @@ import java.util.*;
  */
 public abstract class GA implements Runnable
 {
+
 	double best_fitness_result = 0;
 	
     /** probability of a mutation occuring during genetic mating. For example, 0.03 means 3% chance */
@@ -405,7 +406,7 @@ public abstract class GA implements Runnable
         System.out.println(this.chromosomes[this.bestFitnessChromIndex].getGenesAsStr() +
                            " Fitness= " + this.chromosomes[this.bestFitnessChromIndex].fitness);
         best_fitness_result = this.chromosomes[this.bestFitnessChromIndex].fitness;
-        System.out.println("jestes czy nie ?");
+        
         PrintWriter out = null;
         try{out = new PrintWriter(new File( "C:/file/best.txt") );
             out.write(String.valueOf(best_fitness_result) );

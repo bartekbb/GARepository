@@ -18,6 +18,7 @@ package com.softtechdesign.ga;
 */
 public abstract class GAStringsSeq extends GA
 {
+	
 
 	
     /** the building material or pool "allowed" or "possible" gene values */
